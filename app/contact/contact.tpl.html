@@ -1,0 +1,36 @@
+
+<p ng-bind="newVar"> </p>
+
+<div class="container" id="registerPage">
+    <div class="container ng-scope">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contentToBeSetInTemplate register">
+                    <my-widget>
+                    <h3 return-template="some text some text">We are happy to answer your questions!</h3>
+                    </my-widget>
+                    <form name="companyForm" id="companyForm">
+                        <ng-include src="'app/contact/companyForm.html'"></ng-include>
+
+                        <div class="row consent">
+                            <div>
+                                <input type="checkbox" name="zustimmung" ng-value="unternehmen.zustimmungVertragsbedingungen" ng-disabled="companyForm.$invalid" ng-model="unternehmen.zustimmungVertragsbedingungen">
+                            </div>
+                            <div>
+                                I have read:<a href="">Data Privacy Policy</a>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="row consent">
+                        <div>
+                            <button class="btn btn-save" ui-sref="home">Back</button>
+                            <button class="btn btn-save" type="submit" ng-disabled="unternehmen.zustimmungVertragsbedingungen!=true" form="companyForm" value="Submit" ng-click="postCompany()">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

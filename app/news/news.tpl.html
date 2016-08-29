@@ -1,0 +1,49 @@
+<article id="newsPage">
+    <div class="container">
+
+        <div class="row">
+            <div class="row clearfix">
+                <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                    <div class="search_filter">
+                        <input type="search" name="search_filter_keywords" id="search_filter_keywords" ng-model="userinput">
+                        <input type="submit" name="search_filter_btn" id="search_filter_btn" value="Search">
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+        <div class="row allNewsList" ng-repeat="(key, value) in announcements  | filter:userinput">
+
+            <hr ng-if="value.id==1" class="firstSepline">
+
+            <div class="col-md-4 col-lg-4 col-xs-4 col-sm-4 newsPicCont">
+                <img src="{{value.pic}}" alt="news pic">
+            </div>
+
+            <div class="col-md-8 col-lg-8 col-xs-8 col-sm-8">
+                <div class="row announcements" >
+                    <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2">
+                        <div class="date">
+                            <span class="day">{{value.day}}</span><br/>
+                            <span class="month">{{value.month}}</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 col-lg-10 col-xs-10 col-sm-10">
+                        <div class="event">
+                            <div class="time">Time: {{value.time}}</div><br/>
+                            <div class="eventDescription"><a href="#">{{value.event}}</a></div><br/>
+                            <div class="place">Venue: {{value.place}}</div>
+                            <p>
+                                {{value.text}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="reservationBtn" ng-click="openPopup('news/popup.tpl.html')">Reservation</button>
+            </div>
+            <hr ng-if="value.id!==5">
+        </div>
+    </div>
+</article>

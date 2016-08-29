@@ -1,0 +1,95 @@
+<div class="row">
+
+    <div class="col-lg-8" id="companyInfo">
+    <ul>
+        <li>
+            <div class="col-md-4 col-sm-4">
+                Company:<span class="star">*</span>
+            </div>
+            <div class="col-md-7">
+                <input type="text" placeholder="ABC AG" required ng-value="unternehmen.firmaZeile1" ng-model="unternehmen.firmaZeile1">
+            </div>
+        </li>
+        <li>
+            <div class="col-md-4 col-sm-4">
+                Name and last name:<span class="star">*</span>
+            </div>
+            <div class="col-md-7">
+                <input type="text" placeholder="" required ng-value="unternehmen.name" ng-model="unternehmen.name">
+            </div>
+        </li>
+
+        <li>
+            <div class="col-md-4 col-sm-4">
+                Street and house:<span class="star">*</span>
+            </div>
+            <div class="col-md-7">
+                <input type="text" ng-model="unternehmen.strasseHausnummer" placeholder="" required ng-value="unternehmen.strasseHausnummer">
+            </div>
+        </li>
+
+        <li>
+            <div class="col-md-4 col-sm-4">
+                ZIP, City:<span class="star">*</span>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <input type="text" ng-model="unternehmen.postleitzahl" placeholder="" required ng-value="unternehmen.postleitzahl">
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <input type="text" ng-model="unternehmen.ort" placeholder="" required ng-value="unternehmen.ort">
+            </div>
+        </li>
+
+        <li>
+            <div class="col-md-4 col-sm-4">
+                Telephone:<span class="star">*</span>
+            </div>
+            <div class="col-md-7">
+                <input type="text" ng-model="unternehmen.telefon" uib-tooltip="Only numbers are allowed" placeholder="00-000-0000-000-00" required ng-value="unternehmen.telefon">
+            </div>
+        </li>
+
+        <li>
+            <div class="col-md-4 col-sm-4">
+                Handy:
+            </div>
+            <div class="col-md-7">
+                <input type="tel" ng-model="unternehmen.mobiltelefon" uib-tooltip="Only numbers are allowed" placeholder="00-000-0000-000-00" ng-value="unternehmen.mobiltelefon">
+            </div>
+        </li>
+
+        <li>
+            <div class="col-md-4 col-sm-4">
+                Fax:
+            </div>
+            <div class="col-md-7 col-sm-7">
+                <input type="tel" ng-model="unternehmen.fax" uib-tooltip="Only numbers are allowed" placeholder="00-000-0000-000-00" ng-value="unternehmen.fax">
+            </div>
+        </li>
+
+        <li>
+            <div class="col-md-4 col-sm-4">
+                E-Mail:<span class="star">*</span>
+            </div>
+            <div class="col-md-7 ">
+                <input type="text" uib-tooltip="Input must include @ symbol" ng-model="unternehmen.emailAnsprechpartner" placeholder="muster@gmail.com" required ng-value="unternehmen.emailAnsprechpartner">
+            </div>
+        </li>
+        <li>
+            <div class="col-md-4 col-sm-4">
+                Your message:<span class="star">*</span>
+            </div>
+            <div class="col-md-7">
+                <textarea ng-model="unternehmen.message" placeholder="" required ng-value="unternehmen.message"></textarea>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    <div class="col-md-4 col-sm-4">
+        <div id="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=zPxxTPVD-NYk.kYqhha8kRMrM&z=17" width="340" height="390"></iframe>
+        </div>
+    </div>
+
+</div>

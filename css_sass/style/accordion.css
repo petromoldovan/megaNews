@@ -1,0 +1,317 @@
+/* Bootstrap-styles für alert-accordion-Panels überschreiben */
+
+.panel-title {
+    line-height: 1.5;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/* === Alert Accordion === */
+.alert-acc .panel-title {
+    padding: 4px 26px 4px 8px;
+}
+
+.panel-heading {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.alert-acc .panel-heading {
+    background-color: #f3f3f4;
+    color: #6f6f6f;
+}
+
+.alert-acc .panel-title a:hover {
+    color: #6f6f6f;
+}
+
+/* offenes/ausgewähltes Panel */
+.alert-acc .panel-open .panel-heading {
+    background-color: #414141;
+    color: white;
+}
+
+.alert-acc.panel.panel-default.panel-open .panel-title a:hover {
+    color: white;
+}
+
+/*3 verschiedene Farben für Alert-Panel*/
+.alert-acc .red .panel-heading {
+    border-left: 5px solid #e50811;
+}
+
+.alert-acc .yellow .panel-heading {
+    border-left: 5px solid #fbb900;
+}
+
+.alert-acc .green .panel-heading {
+    border-left: 5px solid #018107;
+}
+
+/* Pfeil Icon */
+
+.arrow {
+    display: block;
+    content: '';
+
+    width: 5px;
+    height: 5px;
+    margin-top: 5px;
+    border-width: 0 1.5px 1.5px 0;
+    border-style: solid;
+    border-color: #7a7a7a;
+}
+
+.arrow-icon-down {
+    display: block;
+    content: '';
+
+    width: 5px;
+    height: 5px;
+    margin-top: 5px;
+    border-width: 0 1.5px 1.5px 0;
+    border-style: solid;
+    border-color: #7a7a7a;
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.arrow-icon-up {
+    display: block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    margin-top: 8px;
+    border-width: 0 1.5px 1.5px 0;
+    border-style: solid;
+    border-color: #e9eaea;
+    -webkit-transform: rotateZ(225deg);
+    -moz-transform: rotateZ(225deg);
+    -ms-transform: rotateZ(225deg);
+    -o-transform: rotateZ(225deg);
+    transform: rotateZ(225deg);
+}
+
+.icon-delete {
+    margin-top: 6px;
+    margin-right: -20px;
+    display: block;
+    width: 6px;
+    height: 6px;
+
+    background-image: url(../assets/img/close-icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* === Service Accordion === */
+div.dark_accordions div.panel {
+    margin-bottom: 0;
+}
+
+.service-acc-headline {
+    background-color: #414141;
+    color: white;
+    padding: 6px 8px;
+}
+
+.service-acc .panel-heading {
+    background-color: white;
+    color: #6f6f6f;
+}
+
+.service-acc .panel-title .mega_record_pos a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.service-acc .table {
+    margin-bottom: 0;
+}
+
+.service-acc .panel-heading table.table > thead > tr > th {
+    font-weight: normal;
+    width: 10%;
+    border-bottom: 0 none;
+    padding: 15px 15px 12px 15px;
+}
+
+.service-acc .panel-heading table.table > thead > tr {
+    border-top: 1px solid #ddd;
+
+}
+
+table.table_panel_titles > thead > tr > th:nth-child(2) {
+    width: 40%;
+}
+
+.service-acc .panel-heading table.table > thead > tr > th:nth-child(2) {
+    width: 42%;
+}
+
+.service-acc .panel-heading table.table > thead > tr > th:nth-child(6) {
+    width: 6%;
+}
+
+.service-acc .panel-heading table.table > thead > tr > th:nth-child(7) {
+    width: 15%;
+}
+
+.service-acc .panel-heading table.table > thead > tr > th:nth-child(8) {
+    width: 11%;
+}
+
+.service-acc .panel-heading table.table > thead > tr > th:nth-child(9) {
+    width: 10%;
+}
+
+.service-acc .panel-heading table.table > thead > tr > th:last-child {
+    width: 30%;
+    margin-right: 5%
+}
+
+/* Pfeil-Icon */
+.big-arrow-icon-down {
+    position: relative;
+    float: right;
+    margin-bottom: 30%;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent #3e3e3e #3e3e3e;
+
+    background-color: transparent;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.big-arrow-icon-up {
+    position: relative;
+    vertical-align: top;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent #3e3e3e #3e3e3e;
+
+    background-color: transparent;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+/* Sortier-Icons */
+
+.sorting-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 11px;
+    line-height: 1;
+    margin-top: 3px;
+}
+
+.sorting-container i {
+    position: absolute;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    border-width: 1.5px;
+    border-style: solid;
+    cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.sorting-icon-up {
+    border-color: #e50811 transparent transparent #e50811;
+    top: 0;
+}
+
+.sorting-icon-down {
+    bottom: 0;
+    border-color: transparent #e50811 #e50811 transparent;
+}
+
+/* Plus- und Minus-Icons */
+
+.new-position > a, .remove-position > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    position: relative;
+    padding-left: 20px;
+}
+
+.new-position i, .remove-position i {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.remove-position i::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    background-color: #e50811;
+}
+
+.new-position i::before, .new-position i::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #e50811;
+}
+
+.new-position i::before {
+    width: 3px;
+}
+
+.new-position i::after {
+    height: 3px;
+}
+
+/* Copy-Icon */
+
+.copy-link > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+}
+
+.copy-link > a > i {
+    width: 12px;
+    height: 11px;
+    background-position: 0 -234px;
+    margin-top: 3px;
+}

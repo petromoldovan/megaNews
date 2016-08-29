@@ -1,0 +1,90 @@
+[
+  {
+    "id":1,
+    "day":"06",
+    "month":"october",
+    "year":"2016",
+    "time":"10:00 till 16:00",
+    "event":"Workshop for newly appointed heads",
+    "place":"Studio 1",
+    "pic":"assets/img/newsImg1.jpg",
+    "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popular"
+  },
+  {
+    "id":2,
+    "day":"07",
+    "month":"october",
+    "year":"2016",
+    "time":"16:00",
+    "event":"Parent's day celebration",
+    "place":"Hall 3c",
+    "pic":"assets/img/newsImg2.png",
+    "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popular"
+  },
+  {
+    "id":3,
+    "day":"25",
+    "month":"november",
+    "year":"2016",
+    "time":"14:00-16:00",
+    "event":"International climat conference",
+    "place":"Studio 1",
+    "pic":"assets/img/newsImg3.png",
+    "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popular"
+  },
+  {
+    "id":4,
+    "day":"1",
+    "month":"December",
+    "year":"2016",
+    "time":"9:00-16:00",
+    "pic":"assets/img/newsImg4.png",
+    "event":"Media lectures (Prof Garret)",
+    "place":"Studio 1",
+    "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popular"
+  },
+  {
+    "id":5,
+    "day":"06",
+    "month":"october",
+    "year":"2016",
+    "time":"10:00 till 16:00",
+    "event":"Workshop for newly appointed heads",
+    "place":"Studio 1",
+    "pic":"assets/img/newsImg2.png",
+    "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popular"
+  },
+  {
+    "id":6,
+    "day":"06",
+    "month":"october",
+    "year":"2016",
+    "time":"10:00 till 16:00",
+    "event":"Workshop for newly appointed heads",
+    "place":"Studio 1",
+    "pic":"assets/img/newsImg1.jpg",
+    "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popular"
+  },
+  {
+    "id":7,
+    "day":"07",
+    "month":"october",
+    "year":"2016",
+    "time":"16:00",
+    "event":"Parent's day celebration",
+    "place":"Hall 3c",
+    "pic":"assets/img/newsImg2.png",
+    "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popular"
+  },
+  {
+    "id":8,
+    "day":"25",
+    "month":"november",
+    "year":"2016",
+    "time":"14:00-16:00",
+    "event":"International climat conference",
+    "place":"Studio 1",
+    "pic":"assets/img/newsImg3.png",
+    "text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popular"
+  }
+]

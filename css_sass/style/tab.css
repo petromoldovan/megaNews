@@ -1,0 +1,12 @@
+/* disable scale transition*/
+.nav a {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none !important;
+}
+
+.tab-content {
+    height:100vh;
+}

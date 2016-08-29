@@ -1,0 +1,51 @@
+<header>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <ul id="topMenu">
+                        <li><a ui-sref="home">HOME</a></li>
+                        <li><a ui-sref="news">PRESS</a></li>
+                        <li><a ui-sref="contact">CONTACT</a></li>
+                        <li><a ui-sref="uploadArea">UPLOADS</a></li>
+                        <li><a ui-sref="users">USERS</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9 col-lg-9 col-xs-9 col-sm-9 logoCont">
+                    <img class="logoPic" src="assets/img/detroit-news-logo.gif" alt="Company logo">
+                </div>
+
+                <div class="col-sm-3">
+                    <ul class="top_nav_icons pull-right">
+                        <li><a href="" class="fb" target="_blank"></a></li>
+                        <li><a href="" class="vk" target="_blank"></a></li>
+                        <li><a href="" class="skype" target="_blank"></a></li>
+                        <li><a href="" class="odnoklassniki" target="_blank"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row" ng-if="!$state.includes('users')">
+                <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <nav>
+                        <ul id="mainMenu">
+                            <li><a href="#">report</a></li>
+                            <li><a href="#">radio</a></li>
+                            <li><a href="#">flyers</a></li>
+                            <li><a href="#">other</a></li>
+                            <li><a href="#">events</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sepLine">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>

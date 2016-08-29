@@ -1,0 +1,38 @@
+[
+  {
+    "id":1,
+    "topic":"Kultur",
+    "header":"8 things this mom will do in 2016 to set a better example",
+    "content":"We don’t just learn from words and actions. We also learn from silence and inaction. Those lessons are scarier than the ones we actively teach our kids...",
+    "pic":"assets/img/newsImg1.jpg"
+
+  },
+  {
+    "id":2,
+    "topic":"History",
+    "header":"Clean your drawers on New Year’s Day",
+    "content":"Dear Readers: Happy new year, and I wish you and yours (pets included) a good year! It’s a good day to relax and take some time off, or clean out a kitchen drawer! There is something rewarding about...",
+    "pic":"assets/img/newsImg2.png"
+  },
+  {
+    "id":3,
+    "topic":"History",
+    "header":"Mark your calendar with these odd or silly holidays",
+    "content":"Roll in the mud, remember to forget and do something to make someone smile",
+    "pic":"assets/img/newsImg3.png"
+  },
+  {
+    "id":4,
+    "topic":"IT",
+    "header":"These 14 characters stole the show in 2015 movies",
+    "content":"It turns out an angry grizzly, a male entertainer and a pink elephant-cat have something in common.",
+    "pic":"assets/img/newsImg4.png"
+  },
+  {
+    "id":5,
+    "topic":"Kultur",
+    "header":"Some new article to be shown on the home page",
+    "content":"We don’t just learn from words and actions. We also learn from silence and inaction. Those lessons are scarier than the ones we actively teach our kids...",
+    "pic":"assets/img/newsImg1.jpg"
+  }
+]

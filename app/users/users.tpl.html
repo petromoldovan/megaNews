@@ -1,0 +1,69 @@
+<div class="container benutzer">
+
+    <div class="row">
+        <div class="screen_kont_page">
+
+            <h4>User Administration</h4>
+
+            <div id="benutzerTable">
+                <div class="row">
+                    <div id="headerTable">
+                        <div class="col-md-2 col-lg-3 col-xs-2 col-sm-2 tableCell">
+                            First name
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xs-3 col-sm-3 tableCell">
+                            Last name
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xs-3 col-sm-3 tableCell" >
+                            Email
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xs-4 col-sm-4 tableCell">
+                            Edit
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="tableBody" ng-repeat="user in usersAll track by $index">
+
+                    <div class="col-md-2 col-lg-3 col-xs-2 col-sm-2 tableCell">
+                                    <span editable-text="user.forename" e-name="name" e-form="rowform">
+                                      {{ user.forename || 'leer' }}
+                                    </span>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3 col-xs-3 col-sm-3 tableCell">
+                                     <span editable-text="user.surname" e-name="nachname" e-form="rowform">
+                                      {{ user.surname || 'leer' }}
+                                    </span>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3 col-xs-3 col-sm-3 tableCell">
+                                    <span editable-text="user.email" e-name="email" e-form="rowform">
+                                      {{ user.email || 'leer' }}
+                                    </span>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xs-4 col-sm-4 tableCell">
+                        <!-- form -->
+                        <form editable-form name="rowform" onbeforesave="saveUser($data, user.id)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == user">
+                            <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary" ng-click="addUser()">
+                                save
+                            </button>
+                            <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-default">
+                                back
+                            </button>
+                        </form>
+                        <div class="buttons" ng-show="!rowform.$visible">
+                            <button class="btn btn-primary" ng-click="rowform.$show(); updateUser($index)">Update</button>
+                            <button class="btn btn-danger" ng-click="removeUser($index)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-default" ng-click="addUser()">Benutzer hinzufügen</button>
+
+        </div>
+    </div>
+
+</div>
