@@ -1,20 +1,21 @@
 angular.module('services.crud', [])
     .factory('crudService', function ($http) {
 
-        api_url = "assets/data/";
+        const api_url = "assets/data/";
 
         return {
             getAnnouncements: function()
             {
-                return $http.get(api_url+'announcements.json');
+                return $http.get(api_url + 'announcements.json');
             },
+
             getStories: function()
             {
-                return $http.get('assets/data/stories.json');
+                return $http.get(api_url + 'stories.json');
             },
 
             getAllUserData: function() {
-                return $http.get(api_url+'userList.json');
+                return $http.get(api_url + 'userList.json');
             },
 
             //example request
