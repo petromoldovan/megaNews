@@ -1,0 +1,26 @@
+{
+  "name": "meganes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petromoldovan/megaNews.git"
+  },
+  "author": "pm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petromoldovan/megaNews/issues"
+  },
+  "homepage": "https://github.com/petromoldovan/megaNews#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2"
+  }
+}
