@@ -20,9 +20,6 @@ angular.module('app.contact', [
 
     .controller("contactCtrl", function contactCtrl($scope,crudService){
 
-        $scope["newVar"]=5
-
-        console.log($scope["newVar"])
     })
 
    .directive("myWidget", function() {

@@ -22,7 +22,8 @@ describe("Common", function(){
           if(angular.isObject(result) &&
               result.success instanceof Function &&
               result.error instanceof Function) {
-            expect(result).toBeDefined();
+            expect(crudService.getAnnouncements().then).toBeDefined();
+            expect(crudService.getStories().then).toBeDefined();
           }
       })
 

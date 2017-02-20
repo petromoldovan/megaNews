@@ -1,4 +1,5 @@
-angular.module('app.home', ['services.crud',
+angular.module('app.home', [
+        'services.crud',
         'ui.router',
         'ui.bootstrap',
         'ngDialog',
@@ -20,6 +21,8 @@ angular.module('app.home', ['services.crud',
 
 
     .controller("homeCtrl", function homeCtrl($scope,crudService,ngDialog){
+        $scope.announcements = [];
+        $scope.stories = [];
 
         //get announcements data
         crudService.getAnnouncements().success(function(data){

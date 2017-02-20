@@ -17,11 +17,13 @@ module.exports = function(config) {
     files: [
       'src/vendor/angular.js',
       'src/vendor/angular-mocks.js',
+      'src/vendor/angular-ui/angular-ui-router.js',
+      'src/vendor/ngDialog.js',
       'app/**/*.js',
+      'app/home/*.js',
       'common/**/*.js',
       'tests/**/*.specs.js'
     ],
-
 
     // list of files to exclude
     exclude: [
