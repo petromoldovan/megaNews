@@ -40,6 +40,14 @@ angular.module('app.home', [
                 console.log("error")
             })
 
+        $scope.concatAll = function(arr) {
+            var res = '';
+            for (var i in arr) {
+                res += " " + arr[i];
+            }
+
+            return res.trim();
+        }
 
         //PopUp dialog box
         $scope.openPopup = function (template, classP) {

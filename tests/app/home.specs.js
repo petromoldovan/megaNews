@@ -55,55 +55,52 @@ describe("Home module", function() {
 
     beforeEach(module('app.home'))
 
-
-    var HomeCtrl, scope;
-
-    beforeEach(inject(function($controller, $rootScope, $httpBackend) {
+    var HomeCtrl, scope, crudService;
+    beforeEach(inject(function($controller, $rootScope) {
         scope = $rootScope.$new();
         HomeCtrl = $controller('homeCtrl', {
             $scope: scope
         })
-
-        //mock calls done by service. Required when doing scope.$digest below
-        $httpBackend.when('GET', 'assets/data/announcements.json').respond(mockAnnouncements);
-        $httpBackend.when('GET', 'assets/data/stories.json').respond(mockStories);
-
-        scope.$digest()
     }));
 
-    it('check initial number of stories', function () {
-        expect(scope.stories.length).toBe(0);
-    });
+    describe("service calls should load data", function() {
+        beforeEach(inject(function($injector, $httpBackend){
+            //mock calls done by service. Required when doing scope.$digest below
+            $httpBackend.when('GET', 'assets/data/announcements.json').respond(mockAnnouncements);
+            $httpBackend.when('GET', 'assets/data/stories.json').respond(mockStories);
 
-    it('check initial number of announcements', function () {
-        expect(scope.announcements.length).toBe(0);
-    });
+            // causes the http requests which will be issued by service to be completed synchronously, and thus will process the fake response we defined above with the $httpBackend GET
+            $httpBackend.flush();
 
-    describe("after get CRUD methods were called", function() {
-        var crudService;
-
-        beforeEach(function(){
-            inject(function($injector){
-                crudService = $injector.get('crudService')
-            })
-        });
-
-        beforeEach(function(){
-            crudService.getStories()
-                .success(function(res) {
-                    scope.stories = res;
-                })
-        })
-
-        it("stories after service call",function(){
-            setTimeout(function(){
-                expect(scope.stories.length).toBe(3);
-                expect(scope.stories[0]).toBe(3);
-            }, 3000);
-
-        })
+            crudService = $injector.get('crudService')
+        }));
         it("must return a promise", function() {
             expect(crudService.getStories().then).toBeDefined();
+        });
+        it('check initial number of stories', function () {
+            expect(scope.stories.length).toBe(3);
+        });
+        it('stories contain correct data', function () {
+            expect(scope.stories[0].id).toEqual(1);
+            expect(scope.stories[2].topic).toEqual("History");
+        });
+        it("must return a promise", function() {
+            expect(crudService.getAnnouncements().then).toBeDefined();
+        });
+        it('check initial number of announcements', function () {
+            expect(scope.announcements.length).toBe(2);
+        });
+        it('announcements contain correct data', function () {
+            expect(scope.announcements[1].month).toEqual("october");
+            expect(scope.announcements[0].event).toEqual("Workshop for newly appointed heads");
+        });
+    });
+
+    describe("test concatAll function", function() {
+        it("return expected value", function() {
+            var stringsArr = ['some', 'random', 'dude'];
+            var result = scope.concatAll(stringsArr)
+            expect(result).toBe('some random dude')
         })
     })
 })
