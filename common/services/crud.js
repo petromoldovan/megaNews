@@ -18,12 +18,12 @@ angular.module('services.crud', [])
                 return $http.get(api_url + 'userList.json');
             },
 
-            //example request
+            //mock request
             updateUser:function(user){
                 return $http.put(api_url, user );               //update url
             },
 
-            //example request
+            //mock request
             newUser: function(user){
                 return $http.post(api_url + user );              //update url
             }

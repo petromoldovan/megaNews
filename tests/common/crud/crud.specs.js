@@ -1,31 +1,19 @@
 describe("Common", function(){
     describe("CRUD services", function(){
       var crudService;
+      const expectedResponse = {"success": true};
+
       beforeEach(module("services.crud"));
       beforeEach(function(){
-          inject(function($injector){
+          inject(function($injector, $httpBackend){
               crudService = $injector.get('crudService')
           })
       });
 
-      it("getAnnouncements to return all announcements", function(){
-        crudService.getAnnouncements()
-            .then(function(res){
-                expect(res.length).toBe(8)
-              }
-            );
-      });
-
-      it("getAnnouncements returns a promise", function(){
-          var result = crudService.getAnnouncements();
-
-          if(angular.isObject(result) &&
-              result.success instanceof Function &&
-              result.error instanceof Function) {
-            expect(crudService.getAnnouncements().then).toBeDefined();
-            expect(crudService.getStories().then).toBeDefined();
-          }
+      it("all calls return promises", function(){
+        expect(crudService.getAnnouncements().then).toBeDefined();
+        expect(crudService.getStories().then).toBeDefined();
+        expect(crudService.getAllUserData().then).toBeDefined();
       })
-
     })
 })
